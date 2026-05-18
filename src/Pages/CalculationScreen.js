@@ -28,7 +28,9 @@ const CalulationScreen = () => {
         let tmpZ = Z;
         let tmpN = N;
         try {
-            const url = `https://physics-poc.onrender.com/data?z=${tmpZ}&n=${tmpN}`;
+            const url = `https://physics-poc-production.up.railway.app/data?z=${tmpZ}&n=${tmpN}`;
+            // const url = `https://physics-poc.onrender.com/data?z=${tmpZ}&n=${tmpN}`;
+            // https://physics-poc-production.up.railway.app/data?n=8&z=8
 
             const response = await fetch(url);
             if (response.ok) {
